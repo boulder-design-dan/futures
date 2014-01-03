@@ -1,0 +1,5 @@
+log verbose "bclog.txt"
+load "Futures www <--> Portable"
+sync create-empty mirror:left->right
+load "Futures project <--> Portable"
+sync create-empty update:left->right

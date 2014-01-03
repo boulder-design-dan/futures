@@ -1,0 +1,68 @@
+/*
+  Corners
+*/
+
+@mixin roundsome($rtl,$rtr,$rbl,$rbr) {
+
+  -moz-border-radius: $rtl $rtr $rbl $rbr;
+  -ms-border-radius: $rtl $rtr $rbl $rbr;
+  -o-border-radius: $rtl $rtr $rbl $rbr;
+  -webkit-border-radius: $rtl $rtr $rbl $rbr;
+  border-radius: $rtl $rtr $rbl $rbr;
+}
+@mixin rounded-corners ($radius: $corners) {
+  @include roundsome($radius,$radius,$radius,$radius);
+}
+@mixin rounded-corners-top ($radius: $corners) {
+  @include roundsome($radius,$radius,0,0);
+}
+@mixin rounded-corners-left ($radius: $corners) {
+  @include roundsome($radius,0,0,$radius);
+}
+@mixin rounded-corners-bottom ($radius: $corners) {
+  @include roundsome(0,0,$radius,$radius);
+}
+@mixin rounded-corners-right ($radius: $corners) {
+  @include roundsome(0,$radius,$radius,0);
+}
+
+/*
+ Fonts
+
+ */
+@mixin featurefont() {
+  font-family: Effra, "effra";
+}
+
+/*
+  Transitions
+*/
+
+@mixin fadeBackground($time: 200ms) {
+  @include transitionBackground($time);
+  @include fadeText($time);
+}
+
+@mixin fadeText($time: 200ms) {
+  -webkit-transition: color $time ease-in-out;
+  -moz-transition: color $time ease-in-out;
+  -ms-transition: color $time ease-in-out;
+  -o-transition: color $time ease-in-out;
+  transition: color $time ease-in-out;
+}
+@mixin transitionBackground($time) {
+	-webkit-transition: background-color $time ease-in-out;
+	-moz-transition: background-color $time ease-in-out;
+	-ms-transition: background-color $time ease-in-out;
+	-o-transition: background-color $time ease-in-out;
+	transition: background-color $time ease-in-out;
+}
+
+/* lighten */
+
+@mixin lightenblock ($color, $lighten) {
+  background: lighten($color, $lighten);
+}
+
+
+

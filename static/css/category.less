@@ -1,0 +1,103 @@
+.header {
+  height: 160px;
+}
+.categoryimage {
+  position: relative;
+  width: 90%;
+  float:right;
+  margin-top: 30px;
+  height: 280px;
+  background: url("@{imgPath}home_page_1.jpg") no-repeat -50px -340px;
+      .titleblock {
+        position: absolute;
+        left: 0px;
+        top: -30px;
+        min-height: 66px;
+        width: 80%;
+        padding-top: 10px;
+        background: @categoryblue;
+        color: @white;
+        font-size: 2.6rem;
+        font-weight: @weightlight;
+        text-align: center;
+      }
+
+}
+.category-content {
+  min-height: 30rem;
+  margin-bottom: 6rem;
+  padding-left: 11%;
+  color: @darkgrey;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+    h1 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      color: @darkgrey;
+		line-height: 1.2;
+      strong, .highlight {
+        font-weight: @weightbold;
+      }
+    }
+  ul {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+      li {
+        list-style-type: disc;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+
+      }
+  }
+}
+.categorymenu {
+  position: absolute;
+  right: 12%;
+  top: -68px;
+  background: rgba(255, 255, 255, 0.9);
+      ul {
+        margin-right: 2rem;
+      }
+     h1{
+
+       padding-left: 20px;
+       padding-top: 20px;
+       padding-right: 60px;
+       padding-bottom: 20px;
+       color: @darkergrey;
+       font-size: 1.2rem;
+       font-weight: @weightbold;
+     }
+  a {
+        display: block;
+        color: @grey;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 1.2em;
+        font-weight: @weightregular;
+        line-height: 1em;
+        .opportunities {
+          display: block;
+          padding-bottom: 10px;
+        }
+
+        &:after {
+          content: "";
+          display:block;
+          height: 20px;
+          .lightenblock (@green1, @lighten20);
+        }
+      }
+  a:hover {
+    color: @salmonpink1;
+    &:after {
+      content: "";
+      display:block;
+      height: 20px;
+      .lightenblock (@green1, @lighten10);
+    }
+  }
+
+}
+

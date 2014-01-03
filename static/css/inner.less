@@ -1,0 +1,189 @@
+.inner-page {
+
+  .leftmenu {
+    float: left;
+
+
+
+    > dl {
+      margin-left: 0px;
+      width: 208px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background: @backgroundgrey1;
+      > dd {
+
+          ul {
+
+			  margin: .2rem 0 1.25rem .2rem;
+            li {
+              a {
+                color: @darkgrey;
+              }
+              a.active {
+                color: @green1;
+                font-weight: @weightbold;
+              }
+              a:hover {
+                color: @green1;
+              }
+            }
+
+          }
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+
+
+        > a {
+          background: none;
+          padding: 0;
+          font-family: effra;
+          position: relative;
+          color: @darkergrey;
+          font-size: 1.2rem;
+          font-weight: @weightbold;
+          line-height: 1.2rem;
+          display: block;
+            [class^="icon-"] {
+              font-size: 1.6rem;
+              position: absolute;
+              top: 0px;
+              right: 0rem;
+             }
+        }
+        > a:hover {
+			color: lighten(@darkgrey,5%);
+        }
+      }
+      /*dd:hover {
+        [class^="icon-"] {
+          display: none;
+        }
+      }*/
+    }
+
+  }
+
+
+  .accordion .content.active {
+    background: none;
+
+  }
+
+.rightcolumn {
+  padding-top: 2rem;
+  padding-left: 1rem;
+      img {
+        width: 100%;
+      }
+  .maincopy {
+    line-height: 1.2rem;
+  }
+  i {
+    padding-right: 0.6rem;
+  }
+  .phone, .enquiry-form {
+    padding-bottom: 1rem;
+  }
+}
+.titleblock {
+  height: 5rem;
+  color: @darkgrey;
+  margin-left: 208px;
+  background: @white;
+  font-size: 3rem;
+  font-weight: @weightlight;
+  padding-left: 2.6rem;
+  padding-top: 1rem;
+}
+  .find-out-more {
+    margin-bottom: 2rem;
+      h1 {
+        background: @salmonpink1;
+        font-weight: @weightregular;
+        color: @white;
+        height: 50px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height:1em;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width:20px;
+        height: 10px;
+        .lightenblock (@salmonpink1, @lighten20);
+      }
+
+  }
+h2 {
+  font-size: 1.2rem;
+  font-weight: @weightregular;
+  color: @darkgrey;
+  line-height: 1.4rem;
+  padding-bottom: 1rem;
+}
+  .shoutout {
+    font-size: 2.8rem;
+    font-weight: @weightlight;
+    color: @green1;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 1.2em;
+    .highlight {
+      font-weight: @weightbold;
+    }
+
+  }
+.what-they-say {
+  margin-bottom: 6rem;
+  .accordion {
+    margin-left: 3rem;
+  }
+  a {
+    width: 50%;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: @weightbold;
+    color: @darkergrey;
+    padding-top: 0rem;
+    position: relative;
+    font-family: effra;
+      i {
+        color: @grey;
+        font-size: 2rem;
+        position: absolute;
+        top: -0.2rem;
+        left: -2rem;
+      }
+    &.active {
+         i {
+           color: @green1;
+         }
+       }
+  }
+  a:hover {
+    background: none;
+
+  }
+  .content {
+    position: relative;
+
+  }
+
+  .content-left {
+    width: 50%;
+    padding-right: 4rem;
+  }
+  .content-right {
+    position: absolute;
+    width: 50%;
+    top: -3rem;
+    right: 0px;
+  }
+}
+}

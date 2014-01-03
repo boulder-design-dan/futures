@@ -1,0 +1,457 @@
+body {
+  background: @mainbackground;
+  font-family: Effra,"effra";
+  font-weight: @weightregular;
+  font-style: @normal;
+  color: @darkgrey;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  position: relative;
+  height: 140px;
+}
+
+h3 {
+	a {
+		font-weight: @weightbold;
+	}
+}
+
+
+.logo {
+  position: absolute;
+  height: 160px;
+  width: 208px;
+  z-index: 1;
+  margin-top: 0px;
+}
+.logo:after {
+  content: "";
+  display: block;
+  width:40px;
+  height: 18px;
+  .lightenblock (@green1, @lighten20);
+}
+
+.topmenu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-right: 0.9375rem;
+
+  li {
+    margin-left: 3px;
+    float:left;
+    background: @white;
+
+    a {
+		display: block;
+		padding: 3px 10px;
+      font-size: 0.9rem;
+      font-weight: @weightbold;
+      color: @green1;
+    }
+    a:hover {
+      color: @darkergrey;
+    }
+  }
+}
+
+.mainmenu {
+  position: absolute;
+  left: 250px;
+  top: 66px;
+    .active {
+      font-weight: @weightbold;
+    }
+    li:first-child {
+      background: none;
+      padding-left: 0px;
+    }
+
+    li {
+
+      padding-left: 37px;
+      padding-right: 10px;
+      float:left;
+      background: url("@{imgPath}forward_slash.png") no-repeat 0 5px;
+
+        a {
+          font-size: 1.4rem;
+          color: @darkergrey;
+        }
+        a:hover {
+          color: @salmonpink1;
+        }
+    }
+}
+.homeimage {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: url("@{imgPath}home_page_1.jpg") no-repeat -50px -340px;
+    .for-sections {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+        li:after {
+            content: "";
+            display: block;
+            width:20px;
+            height: 10px;
+            .lightenblock (@salmonpink1, @lighten20);
+            margin-bottom: 10px;
+          }
+        li {
+
+
+
+            a {
+              display:block;
+              background: @salmonpink1;
+              width: 290px;
+              padding-left: 20px;
+              padding-top: 6px;
+              padding-bottom: 6px;
+              padding-right: 10px;
+              color: @white;
+              font-size: 1.5rem;
+              line-height: 1em;
+				&:hover {
+					background-color: darken(@salmonpink1,10%);
+				}
+            }
+
+        }
+
+    }
+
+}
+.homesplash:after {
+  content: "";
+  display: block;
+  width:40px;
+  height: 18px;
+  .lightenblock (@salmonpink1, @lighten20);
+
+}
+
+.strapline {
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  right: 290px;
+  bottom: 50px;
+  width: 460px;
+  color: @white;
+  font-size: 2.5rem;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 9px;
+  padding-left:20px;
+  font-weight: @weightlight;
+  text-align: right;
+    .highlight {
+      font-weight: @weightbold;
+    }
+}
+
+.gradientblock1 {
+  width: 140px;
+  height: 210px;
+  position: absolute;
+  left: 0px;
+  top: -130px;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+.gradientblock2 {
+  width: 140px;
+  height: 210px;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.25) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(100%,rgba(255,255,255,0.25))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.25) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#40ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.homeintro {
+  font-size: 1.5rem;
+  font-weight: @weightlight;
+  color: @darkergrey;
+  padding-left: 20px;
+  padding-right: 15rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.2em;
+      .highlight {
+      font-weight: @weightheavy;
+    }
+
+}
+
+.homeintro2 {
+  font-size: 2.8rem;
+  font-weight: @weightlight;
+  color: @salmonpink2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.2em;
+  strong {
+    font-weight: @weightbold;
+  }
+
+}
+
+
+
+.opportunities-block {
+  padding-left: 20px;
+  margin-bottom: 40px;
+          a {
+            display: block;
+            color: @darkergrey;
+
+            padding-top: 20px;
+            font-size: 1.3em;
+            font-weight: @weightlight;
+            line-height: 1em;
+                .opportunities {
+                  display: block;
+                  padding-bottom: 10px;
+                }
+
+                &:after {
+                  content: "";
+                  display:block;
+                  height: 20px;
+                  .lightenblock (@green1, @lighten20);
+                }
+          }
+          a:hover {
+            color: @salmonpink1;
+                  &:after {
+                    content: "";
+                    display:block;
+                    height: 20px;
+                    .lightenblock (@green1, @lighten10);
+                  }
+          }
+
+}
+
+.comment-news-events {
+    padding-left:20px;
+      h1 {
+        font-size: 2.6rem;
+        color: @salmonpink2;
+        font-weight: @weightlight;
+      }
+      h2 {
+        font-size: 1.2rem;
+        color: @darkergrey;
+        font-weight: @weightbold;
+      }
+}
+
+.work {
+     margin-top: 30px;
+     padding-left:20px;
+     min-height: 23rem;
+  .work-heading {
+    margin-right: 30%;
+          h1 {
+               background: @salmonpink1;
+               font-weight: @weightregular;
+               color: @white;
+               height: 50px;
+               padding: 10px;
+               font-size: 1.8rem;
+               line-height:1em;
+               margin-bottom: 0px;
+             }
+             &:after {
+               content: "";
+               display: block;
+               width:20px;
+               height: 10px;
+               .lightenblock (@salmonpink1, @lighten20);
+             }
+  }
+  ul {
+    li {
+      a .blog-heading {
+        display: block;
+        font-size: 1.6rem;
+        color: @grey;
+        padding-top: 30px;
+      }
+      a .keep-reading {
+        display: block;
+        font-size: 0.8rem;
+        color: @salmonpink1;
+      }
+      a .blog-heading:hover {
+        color: @salmonpink1;
+      }
+    }
+  }
+
+}
+.work-container {
+
+      h3 {
+
+        margin-top:0px;
+        padding: 10px;
+        margin-left:20px;
+        float: left;
+        font-size: 1em;
+        font-weight: @weightregular;
+        background: @white;
+        a {
+          color: @darkgrey;
+        }
+        a:hover {
+          color: @salmonpink1;
+
+        }
+      }
+}
+
+.twitter {
+  margin-top: 30px;
+  padding-left:20px;
+  min-height: 23rem;
+          .twitter-heading {
+                h1 {
+                  background: @lightblue1;
+                  font-weight: @weightregular;
+                  color: @white;
+                  height: 50px;
+                  padding: 6px;
+                  text-align: center;
+                  font-size: 2.6rem;
+                  line-height:1em;
+                  margin-bottom: 0px;
+                }
+                &:after {
+                  content: "";
+                  display: block;
+                  width:20px;
+                  height: 10px;
+                  .lightenblock (@lightblue1, @lighten20);
+                }
+
+          }
+
+}
+.twitter-container {
+
+      h3 {
+
+        margin-top:0px;
+        padding: 10px;
+        margin-left:20px;
+        font-size: 1em;
+        font-weight: @weightregular;
+        .lightenblock (@lightblue1, @lighten30);
+        a {
+          color: @darkgrey;
+        }
+        a:hover {
+          color: @salmonpink1;
+
+        }
+      }
+}
+
+.outer-footer {
+  background: @white;
+}
+
+.footer {
+  min-height: 300px;
+  padding-top: 1.6rem;
+
+}
+.footercredits {
+  color: @darkgrey;
+  padding-left: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.panel.callout {
+  background: none;
+  border: none;
+    h1 {
+      color: @salmonpink2;
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+    }
+    ul {
+
+        margin-left: 0.5rem;
+          &.join {
+            margin-left: 0rem;
+              li {
+                margin-bottom: 0.5rem;
+              }
+          }
+    }
+
+    a {
+      color: @darkgrey;
+          &:hover {
+            color: @salmonpink2;
+          }
+    }
+    [class^="icon-"], [class*=" icon-"] {
+        line-height: 1;
+        padding-right: 6px;
+        color: lighten(@green1, @lighten20);
+        font-size: 1.2rem;
+    }
+
+}
+
+.contact {
+      color: @darkgrey;
+      div {
+        float: left;
+        margin-bottom: 0.5rem;
+      }
+      i {
+        float:left;
+        margin-right: 10px;
+      }
+      .phone {
+        font-size: 1.4rem;
+      }
+}

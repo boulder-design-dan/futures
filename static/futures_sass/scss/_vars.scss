@@ -1,0 +1,54 @@
+/* Define colours, sizes, common paths etc here */
+
+/*
+Defining a common path for the images makes it a bit more flexible for moving about, but you need to specify the url
+value in a particular format (see the sample below)
+*/
+$imgPath: "../images/";
+
+
+/* fonts */
+$weightlight:           300;
+$weightregular:         400;
+$weightbold:            700;
+$weightheavy:           900;
+
+$normal:               normal;
+$italic:               italic;
+
+
+/* lighten and darken */
+$lighten10:             10%;
+$darken10:              10%;
+$lighten20:             20%;
+$darken20:              20%;
+$lighten30:             30%;
+$darken30:              30%;
+$lighten40:             40%;
+$darken40:              40%;
+
+
+
+/* site main colours */
+$white:               #FFFFFF;
+$mainbackground:      #F5F8F5;
+$green1:              #58B347;
+$salmonpink1:         #D96460;
+$salmonpink2:         #CF8095;
+$lightblue1:          #1CB8C4;
+$categoryblue:        #0097D6;
+
+
+/* logo */
+$logolightblue:         #00ADEE;
+$logodarkblue:          #005777;
+
+/* colours */
+$darkergrey:               #5E585E;
+$darkgrey:                 #6F636F;
+$grey:                     #C5C0C5;
+$lightgrey:               #D2C7F1;
+$lightergrey:               #D8DFE5;
+
+/* other colors */
+$backgroundgrey1:       #E9EAE9;

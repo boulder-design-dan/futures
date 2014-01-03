@@ -1,0 +1,68 @@
+/*
+  Corners
+*/
+
+.roundsome(@rtl,@rtr,@rbl,@rbr) {
+
+  -moz-border-radius: @rtl @rtr @rbl @rbr;
+  -ms-border-radius: @rtl @rtr @rbl @rbr;
+  -o-border-radius: @rtl @rtr @rbl @rbr;
+  -webkit-border-radius: @rtl @rtr @rbl @rbr;
+  border-radius: @rtl @rtr @rbl @rbr;
+}
+.rounded-corners (@radius: @corners) {
+  .roundsome(@radius,@radius,@radius,@radius);
+}
+.rounded-corners-top (@radius: @corners) {
+  .roundsome(@radius,@radius,0,0);
+}
+.rounded-corners-left (@radius: @corners) {
+  .roundsome(@radius,0,0,@radius);
+}
+.rounded-corners-bottom (@radius: @corners) {
+  .roundsome(0,0,@radius,@radius);
+}
+.rounded-corners-right (@radius: @corners) {
+  .roundsome(0,@radius,@radius,0);
+}
+
+/*
+ Fonts
+
+ */
+.featurefont() {
+  font-family: Effra, "effra";
+}
+
+/*
+  Transitions
+*/
+
+.fadeBackground(@time: 200ms) {
+	.transitionBackground(@time);
+	.fadeText(@time);
+}
+
+.fadeText(@time: 200ms) {
+  -webkit-transition: color @time ease-in-out;
+  -moz-transition: color @time ease-in-out;
+  -ms-transition: color @time ease-in-out;
+  -o-transition: color @time ease-in-out;
+  transition: color @time ease-in-out;
+}
+.transitionBackground(@time) {
+	-webkit-transition: background-color @time ease-in-out;
+	-moz-transition: background-color @time ease-in-out;
+	-ms-transition: background-color @time ease-in-out;
+	-o-transition: background-color @time ease-in-out;
+	transition: background-color @time ease-in-out;
+}
+
+/* lighten */
+
+.lightenblock (@color, @lighten) {
+  background: lighten(@color, @lighten);
+}
+
+
+

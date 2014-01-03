@@ -1,0 +1,5 @@
+NameError: variable @mainbackground is undefined in D:\www\futures\static\css\common.less on line 2, column 15:
+1 body {
+2   background: @mainbackground;
+3   font-family: Effra,"effra";
+

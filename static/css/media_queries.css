@@ -1,0 +1,91 @@
+/* Define mobile styles */
+@media only screen {
+  
+}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  .header {
+    height: 123px;
+  }
+  .topmenu li {
+    float: none;
+  }
+  .logo {
+    width: 160px;
+    height: 123px;
+  }
+  .homeimage {
+    height: 330px;
+  }
+  .gradientblock1,
+  .gradientblock2 {
+    display: none;
+  }
+  .strapline {
+    right: 0;
+    bottom: 235px;
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .comment-news-events h1 {
+    font-size: 1.8rem;
+  }
+  .homeintro {
+    padding-right: 20px;
+  }
+  .homeintro2 {
+    font-size: 1.8rem;
+    margin-right: 0rem;
+  }
+  .work {
+    min-height: 0;
+  }
+  .work ul li a .blog-heading {
+    font-size: 1.4rem;
+    padding-top: 20px;
+    line-height: 1.6rem;
+  }
+  .work .work-heading {
+    margin-right: 0rem;
+  }
+  .work .work-heading h1 {
+    font-size: 1.6rem;
+  }
+  .panel.callout h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .homeimage .for-sections li a {
+    width: 230px;
+    font-size: 1.2rem;
+  }
+}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+  
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .strapline {
+    font-size: 1.6rem;
+  }
+}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+  
+}
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  
+}
+@media only screen and (min-width: 90.063em) {
+  
+}
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  
+}
+/* min-width 1921px, xlarge screens */
+@media only screen and (min-width: 120.063em) {
+  
+}

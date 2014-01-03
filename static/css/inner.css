@@ -1,0 +1,5 @@
+NameError: variable @backgroundgrey1 is undefined in D:\www\futures\static\css\inner.less on line 13, column 19:
+12       padding-right: 1rem;
+13       background: @backgroundgrey1;
+14       > dd {
+

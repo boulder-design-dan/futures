@@ -1,0 +1,164 @@
+<!--
+    
+    Run ant in the main project directory (where this file is)
+    
+    To specify major version at command line, use ant -Dmajor = x (where x is the version)
+
+    The default setup assumes a folder structure of
+    
+     - projectfoldername
+        - build
+        - logs
+        - localsync
+        - www
+            - {build.properties}
+             - assets
+              - components
+               - projectfoldername
+                  - css
+                    - lib.less
+                  - js
+                    - main.js
+            - min
+              - css
+              - js
+    
+
+-->
+<project name="Build site assets" default="all" basedir=".">
+    
+    <!-- Setup -->  
+    <property name="PROPERTIES_DIR" value="www" description="Where the build.properties file goes" />
+    
+    <!-- Handle version numbering. Can be overridden by command line -->
+ 	<condition property="major" value="0">
+	   <not>
+	      <isset property="major"/>
+	   </not>
+	</condition>
+ 	<property name="MAJORVERSION" value="${major}" description="Major release version number" />
+    <propertyfile file="${PROPERTIES_DIR}/build.properties" comment="Version properties">
+	  <entry  key="adate" type="date" value="now"/>
+	  <entry  key="minorversion" type="int" default="1" operation="+"/>
+	  <entry  key="majorversion" type="int" value="${MAJORVERSION}" operation="="/>
+	</propertyfile>
+    <property file="${PROPERTIES_DIR}/build.properties" />
+    <property name="VERSION" value="${majorversion}.${minorversion}" />
+
+    <!-- Source files and folders -->  
+            
+            <property name="SRC_DIR" value="www/assets/components/####" description="Source folder" />
+            <property name="SRC_CSS_DIR" value="${SRC_DIR}/css" description="Source of CSS file(s)" />
+            <property name="SRC_JS_DIR" value="${SRC_DIR}/js" description="Source of JS file(s)" />
+        
+            <!-- The Less files will be compiled to this css file in the SRC_CSS_DIR -->
+            <property name="COMPILED_CSS_NAME" value="theme_${VERSION}.css" />
+            <property name="COMPILED_CSS" value="${SRC_CSS_DIR}/${COMPILED_CSS_NAME}" />    
+   
+    <!-- Files names for distribution -->  
+    
+            <property name="DIST_DIR" value="www/min" description="Output folder for build targets" />
+            <property name="DIST_CSS_DIR" value="${DIST_DIR}/css" description="Output folder for CSS files" />
+            <property name="DIST_JS_DIR" value="${DIST_DIR}/js" description="Output folder for JavaScript files" />
+
+        <!-- Paths to the minified files -->
+            <property name="CSSMINFILE" value="common.min_${VERSION}.css" />
+            <property name="CSS_MIN" value="${DIST_CSS_DIR}/${CSSMINFILE}" />
+    
+
+        <!-- The minified javascript file -->
+            <property name="JSFILE" value="common_${VERSION}.js" />
+            <property name="JSMINFILE" value="common.min_${VERSION}.js" />
+            <property name="JS" value="${DIST_JS_DIR}/${JSFILE}" />
+            <property name="JS_MIN" value="${DIST_JS_DIR}/${JSMINFILE}" />
+
+    
+    
+    
+    <!-- Clear out any old minified/concat files -->
+    <target name="removeold" description="Clear previous output">
+        <echo message="Clearing old output..." />
+        <mkdir dir="${DIST_DIR}" />
+        <mkdir dir="${DIST_CSS_DIR}" />
+        <mkdir dir="${DIST_JS_DIR}" />
+        <delete>
+            <fileset dir="${DIST_CSS_DIR}">
+                <include name="*.css"/>
+            </fileset>
+            <fileset dir="${DIST_CSS_DIR}">
+                <include name="*.js"/>
+            </fileset>
+        </delete>
+        <echo message="Done" />
+    </target>
+    
+    <!-- Compile all the core LESS files to one css file -->
+    <target name="less" depends="removeold" description="Compile LESS files">
+    	<echo message="Compiling LESS files to ${COMPILED_CSS_NAME} ..." />
+
+		<exec dir="." executable="cmd">
+			<arg line="/c d:/nodejs/lessc -x ${SRC_CSS_DIR}/lib.less &gt; ${COMPILED_CSS}" />
+    	</exec>
+		<echo message="Done" />
+    </target>
+
+    
+    <!-- Minify the compiled CSS file and save to the distribution directory -->
+    <target name="crush.css" depends="less" description="Minimize CORE CSS files">
+        
+        <echo message="Compressing ${CSSMINFILE} ..." />
+        <exec dir="." executable="cmd">
+            <arg line="/c d:/nodejs/clean-css -eb -o ${CSS_MIN} ${COMPILED_CSS}" />
+        </exec>
+        <echo message="Done" />
+        
+        <!-- Remove the compiled LESS file -->
+        <echo message="Removing ${COMPILED_CSS} ..." />
+        <delete file="${COMPILED_CSS}"/>
+        <echo message="Done" />
+        
+    </target>
+
+    <!-- Concatenate individual javascript files -->
+    <target name="js" depends="removeold" description="Concatenate JavaScript source files">
+        <echo message="Building ${JS}" />
+        <concat destfile="${JS}">
+			<fileset dir="${SRC_JS_DIR}" includes="main.js" />
+        </concat>
+        <echo message="Done" />
+    </target>
+
+    <target name="js.min" depends="js" description="Minimize JavaScript files">
+        
+        <echo message="Compressing ${JSFILE} ..." />
+        <exec dir="." executable="cmd">
+            <arg line="/c d:/nodejs/uglifyjs -o ${JSMINFILE} ${JS}" />
+        </exec>
+        <echo message="Done" />
+        
+    </target>
+    
+    <!-- Copy any standalone files and resources, e.g. fonts, into the min directory -->
+    <target name="move.static" depends="crush.css" description="Move any static resources to the minified directory">
+
+        <echo message="Copying fonts css and resources ..."/>
+        <copy todir="${DIST_CSS_DIR}/fonts">
+            <fileset dir="${SRC_CSS_DIR}/fonts"/>
+        </copy>
+        <copy file="${SRC_CSS_DIR}/fonts.css" tofile="${DIST_CSS_DIR}/fonts.css"/>
+        <echo message="Done" />
+
+        <echo message="Compressing fonts.css ..." />
+        <exec dir="." executable="cmd">
+            <arg line="/c d:/nodejs/clean-css -eb -o ${DIST_CSS_DIR}/fonts.min.css ${DIST_CSS_DIR}/fonts.css" />
+        </exec>
+        <echo message="Done" />
+        
+    </target>
+
+    
+
+    <target name="all" depends="removeold, less, crush.css, js, js.min">
+        <echo message="Build complete." />
+    </target>
+</project>

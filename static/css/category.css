@@ -1,0 +1,5 @@
+NameError: variable @imgPath is undefined in D:\www\futures\static\css\category.less on line 10, column 19:
+9   height: 280px;
+10   background: url("@{imgPath}home_page_1.jpg") no-repeat -50px -340px;
+11       .titleblock {
+

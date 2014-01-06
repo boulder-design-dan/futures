@@ -44,7 +44,7 @@
       <file leaf-file-name="_inner.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_inner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="0" selection-start="3031" selection-end="3031" vertical-scroll-proportion="0.0">
+            <state line="214" column="0" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,16 +53,16 @@
       <file leaf-file-name="inner_page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/inner_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="3821" selection-end="3821" vertical-scroll-proportion="-4.576923">
+            <state line="93" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="180" selection-start="1733" selection-end="1733" vertical-scroll-proportion="-12.653846">
+            <state line="31" column="180" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.34699103">
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
       <file leaf-file-name="_category.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_category.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+            <state line="42" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="42.32">
               <folding />
             </state>
           </provider>
@@ -80,16 +80,16 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="189" selection-end="189" vertical-scroll-proportion="-3.9230769">
+            <state line="8" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_common.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_common.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="557" column="23" selection-start="11678" selection-end="11678" vertical-scroll-proportion="0.9331437">
+            <state line="579" column="0" selection-start="11920" selection-end="11920" vertical-scroll-proportion="-30.56">
               <folding />
             </state>
           </provider>
@@ -107,18 +107,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_slicknav.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_slicknav.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="13" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +116,16 @@
       <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+            <state line="9" column="24" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foundation.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/futures_sass/bower_components/foundation/scss/foundation.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -154,11 +152,11 @@
         <option value="$PROJECT_DIR$/static/futures_sass/scss/_media-queries.scss" />
         <option value="$PROJECT_DIR$/static/futures_sass/scss/_slicknav.scss" />
         <option value="$PROJECT_DIR$/static/futures_sass/js/app.js" />
-        <option value="$PROJECT_DIR$/static/futures_sass/scss/_category.scss" />
         <option value="$PROJECT_DIR$/static/futures_sass/scss/_inner.scss" />
         <option value="$PROJECT_DIR$/static/futures_sass/inner_page.php" />
         <option value="$PROJECT_DIR$/static/futures_sass/footer.php" />
         <option value="$PROJECT_DIR$/static/futures_sass/scss/_common.scss" />
+        <option value="$PROJECT_DIR$/static/futures_sass/scss/_category.scss" />
       </list>
     </option>
   </component>
@@ -166,7 +164,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
+    <option name="width" value="1296" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -214,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,6 +281,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures_sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="scss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -304,13 +325,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="futures_sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foundation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,26 +368,11 @@
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="7600470e-863e-42c6-8cca-5ae95ed449f5">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
+      <server id="58200c9e-7de5-408e-a15d-2d04ea80ccfb">
+        <serverdata />
       </server>
-      <server id="82d35043-dabd-4dde-b688-968fc4edbb60">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="98e97e53-869b-45b2-a5ff-18c2b412df29">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
+      <server id="c14f8e18-dbbd-49fb-bc43-10c303b98999">
+        <serverdata />
       </server>
     </servers>
   </component>
@@ -397,18 +428,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1026" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25275397" sideWeight="0.8810623" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26094005" sideWeight="0.8810623" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11893764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11883408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -482,49 +513,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/css/vars.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="505" selection-end="505" vertical-scroll-proportion="0.030630631">
-          <folding />
-        </state>
+        <state line="21" column="8" selection-start="505" selection-end="505" vertical-scroll-proportion="0.030630631" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="2" selection-start="9551" selection-end="9551" vertical-scroll-proportion="0.031365313">
-          <folding />
-        </state>
+        <state line="394" column="2" selection-start="9551" selection-end="9551" vertical-scroll-proportion="0.031365313" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="429" selection-end="1048" vertical-scroll-proportion="-1.3461539">
-          <folding />
-        </state>
+        <state line="19" column="6" selection-start="429" selection-end="1048" vertical-scroll-proportion="-1.3461539" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="22" selection-start="3606" selection-end="3606" vertical-scroll-proportion="-15.730769">
-          <folding />
-        </state>
+        <state line="109" column="22" selection-start="3606" selection-end="3606" vertical-scroll-proportion="-15.730769" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="189" selection-end="189" vertical-scroll-proportion="-3.9230769">
+        <state line="8" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -536,60 +555,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_slicknav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="13" selection-start="2222" selection-end="2222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_category.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/inner_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="3821" selection-end="3821" vertical-scroll-proportion="-4.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/futures_sass/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="180" selection-start="1733" selection-end="1733" vertical-scroll-proportion="-12.653846">
+        <state line="93" column="0" selection-start="4489" selection-end="4489" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_inner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="0" selection-start="3031" selection-end="3031" vertical-scroll-proportion="0.0">
+        <state line="214" column="0" selection-start="4335" selection-end="4335" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="557" column="23" selection-start="11678" selection-end="11678" vertical-scroll-proportion="0.9331437">
+        <state line="579" column="0" selection-start="11920" selection-end="11920" vertical-scroll-proportion="-30.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/futures_sass/bower_components/foundation/scss/foundation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/futures_sass/scss/_category.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="42.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/futures_sass/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="180" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.34699103">
           <folding />
         </state>
       </provider>
